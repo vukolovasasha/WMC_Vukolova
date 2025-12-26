@@ -1,3 +1,15 @@
+nav a.active {
+  background-color: #c9b07e;
+  color: #fff;
+  box-shadow: 0 0 10px #c9b07e;
+}  
+  * {
+    box-sizing: border-box;
+  }
+  .page {
+    padding: 2rem;
+  }
+
 header h1 {
    font-family: "Uncial Antiqua", "Georgia", serif;
    font-size: 2.8rem;
@@ -13,8 +25,7 @@ body {
      margin: 0; 
       background: #f2e8c9 url("../image/parchment.jpg") center/cover fixed no-repeat; 
       font-family: Georgia, serif;
-      line-height: 1.8; 
-      padding: 2rem;  
+      line-height: 1.8;  
       color: #2b2b2b;
       }
 
@@ -27,21 +38,33 @@ img {
    border-radius: 5px;  
    box-shadow: 0 0 10px rgba(100, 70, 20, 0.3);  
 
-  }      
+  }  
+  @media (max-width: 480px) {
+  nav ul {
+    gap: 0.6rem;             
+  }
+
+  nav a {
+    font-size: 1rem;          
+    padding: 0.45rem 0.8rem;  
+}   
+  } 
 
 nav {
   background-color: #4b2e05; 
   padding: 0.5rem 0;       
   text-align: center;       
   border-bottom: 3px solid #c9b07e;
-}
-
+  width: 100%;
+    }
 nav ul {
   list-style: none; 
   margin: 0;
   padding: 0;
-  display: inline-flex; 
-  gap: 3rem;            
+  display: flex; 
+  justify-content: center;
+  gap: 1rem;  
+  flex-wrap: wrap;          
 }
 
 nav li {
