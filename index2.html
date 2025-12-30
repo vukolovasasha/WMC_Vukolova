@@ -1,61 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Uncial+Antiqua&display=swap" rel="stylesheet">
-  
+    <title>Medieval Memory (CSS only)</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Uncial+Antiqua&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav>
         <ul>
             <li><a href="index.html">Cats</a></li>
             <li><a href="index1.html">People</a></li>
-            <li><a href="index2.html" class="active">Other</a></li>
+            <li><a href="index2.html" class="active">Memo</a></li>
         </ul>
-</nav>
+    </nav>
+
     <div class="page">
         <header>
-            <h1>Other</h1>
+            <h1>Medieval Memo (CSS only)</h1>
         </header>
+
         <main>
-            <section id="home">
-                <h2></h2>
+            <section>
+                <h2>Flip cards. Match them… in your heart. (CSS can’t count, sorry)</h2>
             </section>
 
-            <section id="about">
-                <h2>About</h2>
-                <article>
-                    <h2></h2>
-                            <figure>
-                                    <a href="https://ornella.club/29680-srednevekovye-koty.html" target="_blank" rel="noopener">
-                                        <img src="image/cat_0.jpg" alt="Medieval illustration of a cat in About section">
-                                    </a>
-                                    <figcaption>
-                                    <a href="https://ornella.club/29680-srednevekovye-koty.html" target="_blank" rel="noopener">
-                                        More strange cats
-                                    </a>
-                                    </figcaption>
-                            </figure>                    
-                </article>
-            </section>   
+            <section class="gallery memo">
+                <h2>Try to match the pairs</h2>
+                <div class="grid">
+                    <div class="memo-item">
+                        <input class="memo-toggle" type="checkbox" id="card1">
+                        <label class="memo-card" for="card1">
+                            <span class="memo-face memo-front">
+                                <img src="image/card-back.jpg" alt="Card back">
+                            </span>
+                            <span class="memo-face memo-back">
+                                <img src="image/cat_4.jpg" alt="Medieval cat">
+                            </span>
+                        </label>
+                    </div>
+                    <div class="memo-item">
+                        <input class="memo-toggle" type="checkbox" id="card2">
+                        <label class="memo-card" for="card2">
+                            <span class="memo-face memo-front">
+                                <img src="image/card-back.jpg" alt="Card back">
+                            </span>
+                            <span class="memo-face memo-back">
+                                <img src="image/cat_2.jpg" alt="Medieval cat">
+                            </span>
+                        </label>
+                    </div>
+                    <div class="memo-item">
+                        <input class="memo-toggle" type="checkbox" id="card3">
+                        <label class="memo-card" for="card3">
+                            <span class="memo-face memo-front">
+                                <img src="image/card-back.jpg" alt="Card back">
+                            </span>
+                            <span class="memo-face memo-back">
+                                <img src="image/cat_3.jpg" alt="Medieval cat">
+                            </span>
+                        </label>
+                    </div>
+                    <div class="memo-item">
+                        <input class="memo-toggle" type="checkbox" id="card4">
+                        <label class="memo-card" for="card4">
+                            <span class="memo-face memo-front">
+                                <img src="image/card-back.jpg" alt="Card back">
+                            </span>
+                            <span class="memo-face memo-back">
+                                <img src="image/cat_3.jpg" alt="Medieval cat">
+                            </span>
+                        </label>
+                    </div>
+                    <div class="memo-item">
+                        <input class="memo-toggle" type="checkbox" id="card5">
+                        <label class="memo-card" for="card5">
+                            <span class="memo-face memo-front">
+                                <img src="image/card-back.jpg" alt="Card back">
+                            </span>
+                            <span class="memo-face memo-back">
+                                <img src="image/cat_2.jpg" alt="Medieval cat">
+                            </span>
+                        </label>
+                    </div>
+                    <div class="memo-item">
+                        <input class="memo-toggle" type="checkbox" id="card6">
+                        <label class="memo-card" for="card6">
+                            <span class="memo-face memo-front">
+                                <img src="image/card-back.jpg" alt="Card back">
+                            </span>
+                            <span class="memo-face memo-back">
+                                <img src="image/cat_4.jpg" alt="Medieval cat">
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </section>
 
             <section id="contact">
                 <h2>Contact</h2>
                 <ul>
                     <li>Email: <a href="mailto:test@example.com">test@example.com</a></li>
-                    <li>Phone: <a href="tel:+1231230909">+1&nbsp;231&nbsp;230&nbsp;909</a></li>
                 </ul>
             </section>
+        </main>
 
         <footer>
             <p>&copy; 2025 Cats in ME</p>
-        </footer> 
-     
-
-    </main>
-    </div>  
+        </footer>
+    </div>
 </body>
+
 </html>
