@@ -25,9 +25,18 @@
         </header>
         <main>
             <section id="home">
-                <h2>Welcome to the kingdom of weird medieval cats — where paws are crooked, faces are cursed, and every
-                    meow is eternal</h2>
-            </section>
+    <h2>
+        Welcome to the kingdom of weird medieval cats — where paws are crooked,
+        faces are cursed, and every meow is eternal
+    </h2>
+
+    <button onclick="showSecret()">Reveal the secret of medieval cats</button>
+
+    <p id="secret" style="display:none;">
+        Secret: Medieval artists probably had never seen a real cat.
+    </p>
+
+</section>
             <article>
                 <h2>Why do medieval cats look like this? Nobody knows. But we’re here to celebrate their awkward charm
                     and honor the brave artists who clearly never met a real cat.</h2>
@@ -64,6 +73,11 @@
 
         </main>
     </div>
+    <script>
+function showSecret() {
+    document.getElementById("secret").style.display = "block";
+}
+</script>
 </body>
 
 </html>

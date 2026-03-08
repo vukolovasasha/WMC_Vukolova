@@ -230,3 +230,7 @@ footer p {
   height: auto;
   object-position: center;
 }
+
+button {
+    margin-top: 15px;
+}
