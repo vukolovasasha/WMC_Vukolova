@@ -1,0 +1,99 @@
+:root {
+    --bg-color: #f4f6fb;
+    --card-color: #ffffff;
+    --text-color: #1f2937;
+    --nav-color: #2563eb;
+    --nav-hover: #1d4ed8;
+    --border-color: #d1d5db;
+}
+
+body.dark-theme {
+    --bg-color: #111827;
+    --card-color: #1f2937;
+    --text-color: #f9fafb;
+    --nav-color: #60a5fa;
+    --nav-hover: #3b82f6;
+    --border-color: #374151;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.page {
+    display: flex;
+    min-height: 100vh;
+    padding: 40px;
+    box-sizing: border-box;
+    gap: 40px;
+}
+
+.sidebar {
+    width: 230px;
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 30px 20px;
+    height: fit-content;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--nav-color);
+    text-decoration: none;
+    font-size: 22px;
+    padding: 14px 20px;
+    border-radius: 12px;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: var(--nav-color);
+    color: white;
+}
+
+.content {
+    max-width: 800px;
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 40px;
+    line-height: 1.7;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 36px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+p {
+    font-size: 18px;
+}
+
+#theme-button {
+    margin-top: 30px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--nav-color);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#theme-button:hover {
+    background-color: var(--nav-hover);
+}
