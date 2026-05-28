@@ -152,6 +152,23 @@ p {
 
 }
 
+footer {
+
+    margin-top: 60px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid
+    var(--border-color);
+
+    text-align: center;
+
+    font-size: 14px;
+
+    color: gray;
+
+}
+
 
 #theme-button {
 
@@ -212,6 +229,42 @@ p {
     background-color: var(--nav-hover);
 
     transform: scale(1.05);
+
+}
+
+.meme-viewer img {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    border-radius: 16px;
+
+    margin-top: 20px;
+
+    display: block;
+
+}
+
+#meme-button {
+
+    margin-top: 20px;
+
+    padding: 16px 28px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background-color: var(--nav-color);
+
+    color: white;
+
+    cursor: pointer;
 
 }
 
