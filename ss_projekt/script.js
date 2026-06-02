@@ -380,5 +380,40 @@ if (restartButton) {
 
 }
 
+const memeImage = document.querySelector("#meme-image");
+const memeCaption = document.querySelector("#meme-caption");
+const memeButton = document.querySelector("#meme-button");
+
+const memes = [
+    {
+        image: "image/meme4.jpg",
+        caption: "When the code works on the first try."
+    },
+
+    {
+        image: "image/meme2.jpg",
+        caption: "Me trying to understand JavaScript."
+    },
+
+    {
+        image: "image/meme3.jpg",
+        caption: "When HTML, CSS and JS finally work together."
+    },
+
+    {
+        image: "image/meme1.jpg",
+        caption: "Debugging: removing one bug and creating three new ones."
+    }
+];
+
+if (memeButton) {
+    memeButton.addEventListener("click", function () {
+        const randomIndex = Math.floor(Math.random() * memes.length);
+
+        memeImage.src = memes[randomIndex].image;
+        memeCaption.textContent = memes[randomIndex].caption;
+    });
+}
+
 
 startGame();
